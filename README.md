@@ -33,7 +33,7 @@ We are using extensive pre-processing techniques to eliminate all kinds of noise
 ![image not found](https://drive.google.com/uc?export=view&id=1Pl1OkU_SqmkjwX5fm-yN1dx2XlEeXRsK)
 
 ### Brain demo
-![image not found](https://drive.google.com/uc?export=view&id=MxJkLR2ZmF_ZpK92hBXGnHaurMtaK4IK)
+![image not found](https://drive.google.com/uc?export=view&id=1MxJkLR2ZmF_ZpK92hBXGnHaurMtaK4IK)
 
 ### Kidney demo
 ![image not found](https://drive.google.com/uc?export=view&id=1kgIDfoyEEEYGV67KUfjLfUrGu9GKOy5W)
