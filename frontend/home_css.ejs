@@ -1,0 +1,160 @@
+<style>
+/*just bg and body style*/
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+
+  padding: 0 1em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  margin-left: 40%;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+  background-color: black;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.container{
+background-color:#1E2832;
+padding-bottom:20px;
+margin-top:10px;
+border-radius:5px;
+}
+.center{
+text-align:center;  
+}
+#top{
+margin-top:20px;  
+}
+.btn-container{
+background:#fff;
+border-radius:5px;
+padding-bottom:20px;
+margin-bottom:20px;
+}
+.white{
+color:white;
+}
+.imgupload{
+color:#1E2832;
+padding-top:40px;
+font-size:7em;
+}
+#namefile{
+color:black;
+}
+h4>strong{
+color:#ff3f3f
+}
+.btn-primary{
+border-color: #ff3f3f !important;
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #ff3f3f !important;
+border-color: #ff3f3f !important;
+}
+
+/*these two are set to not display at start*/
+.imgupload.ok{
+display:none;
+color:green;
+}
+.imgupload.stop{
+display:none;
+color:red;
+}
+
+
+/*this sets the actual file input to overlay our button*/ 
+#fileup{
+opacity: 0;
+-moz-opacity: 0;
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+width:200px;
+cursor: pointer;
+position:absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 40px;
+height: 50px;
+}
+
+/*switch between input and not active input*/
+#submitbtn{
+  padding:5px 50px;
+  display:none;
+}
+#fakebtn{
+  padding:5px 40px;
+}
+
+
+/*www.emilianocostanzo.com*/
+#sign{
+	color:#1E2832;
+	position:fixed;
+	right:10px;
+	bottom:10px;
+	text-shadow:0px 0px 0px #1E2832;
+	transition:all.3s;
+}
+#sign:hover{
+	color:#1E2832;
+	text-shadow:0px 0px 5px #1E2832;
+}
+</style>

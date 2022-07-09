@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <title>
+            Analysis Page
+        </title>
+        <%- include("./analysis_page_css.ejs") %> 
+    </head>
+    <body>
+        <h2 class="result">Result:
+            <%  if(res=="1"){%> 
+          Tumorous
+            <% }else{%>
+          Non-Tumorous
+           <% }%>
+        </h2>
+        
+    <h1>Analysis</h1>
+    <div class="cards">      
+        <div class="card">
+            <h2 class="card-title">Gray-scale Image</h2>
+            <img src="img1.jpg" alt="Gray Scale image">
+            <p class="card-desc">In digital photography, computer-generated imagery and colormetry, a grayscale image is one where the value of each pixel is a single sample that represents only the amount of light; That is, it only carries intensity information. </p>
+       </div>  
+        <div class="card">
+            <h2 class="card-title">Cropped image</h2>
+            <img src="img5.jpg" alt="Cropped Image">
+            <p class="card-desc">Image cropping gives the freedom to pick the selected region of interest within the image for the analysis.</p>
+          </div>
+    
+        <div class="card">      
+            <h2 class="card-title">Threshold image</h2>
+                <img src="img2.jpg" alt="Gray-scale">
+                <p class="card-desc">Thresholding is a type of image segmentation, where we change the pixels of an image to make the image easier to analyze.</p>
+            </div>
+        
+</div>
+
+    <div class="cards">      
+    
+    </div>
+
+
+    </body>
+</html>

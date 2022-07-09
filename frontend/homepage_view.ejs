@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Home</title>
+        <!-- CSS only -->
+    </head>
+    <body>
+      <script>
+        function fun(){
+        console.log(document.getElementById("select_box"))
+      }
+      </script>
+        <form action="analyze" enctype="multipart/form-data" method="post">
+<label for="scan_type">Choose a scan type:</label>
+  <select id="select_box" name="Scan_type" id="scan_type">
+    <option value="brain">Brain</option>
+    <option value="lung">Lungs</option>
+  </select>
+  <br><br>
+  <input type="file" id="scan_image" name="filename">
+  <br><br>
+  <input type="submit">
+        </form>
+    </body>
+</html>

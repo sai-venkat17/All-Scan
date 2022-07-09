@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <%- include("./home_css.ejs") %>
+        <%- include("./test.ejs") %>
+		<%- include("./navbar_css.ejs") %>
+
+        
+    </head>
+    <body>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+<%- include("./navbar.ejs") %>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div class="whole" style="margin:4%;margin-top:1%;">
+<div class="container center" style="border:1px solid black;box-shadow: 5px;">
+	<div class="row">
+		<div class="col-md-12" style="padding:2%;">
+			<h1 class="white">Scan Upload</h1>
+			<br/>
+			<p class="white">Select the type of scan,upload image and click on submit to get the scan result</p>
+			
+		</div>
+	</div>
+	
+	<form action="analyze" enctype="multipart/form-data" method="post">
+        	<div class="row">
+			<div class="col-md-6 col-md-offset-3 center">
+				<div class="btn-container">
+					<!--the three icons: default, ok file (img), error file (not an img)-->
+					<br/>
+                    <br/>
+                    <div class="select">
+     <select id="select_box" name="Scan_type" id="scan_type">
+         <option value="brain">Brain</option>
+        <option value="lung">Lungs</option>
+		<option value="kidney">Kidneys</option>
+		
+     </select>
+</div>
+
+                    <!--this field changes dinamically displaying the filename we are trying to upload-->
+					<p id="namefile">Only pics allowed! (jpg,jpeg,bmp,png)</p>
+					<!--our custom btn which which stays under the actual one-->
+					<div class="upload-btn-wrapper">
+						<br/>
+                        <button style="background-color:aqua;color:black" class="btn">Upload Scan</button>
+                        <input type="file" name="filename" />
+                    </div>
+  <!--this is the actual file input, is set with opacity=0 beacause we wanna see our custom one-->
+                    
+                    
+  
+				</div>
+			</div>
+		</div>
+			<!--additional fields-->
+		<div class="row">			
+			<div class="col-md-12">
+				<!--the defauld disabled btn and the actual one shown only if the three fields are valid-->
+				
+				<button style="background-color:greenyellow;color:black" type="submit" class="btn btn-default" id="fakebtn">Submit! <i class="fa fa-minus-circle"></i></button>
+			</div>
+		</div>
+	</form>
+</div>
+</div>
+</body>
+</html>
